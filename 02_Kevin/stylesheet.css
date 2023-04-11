@@ -1,0 +1,122 @@
+farge{
+	color: rgba(0,0,0,1.00)
+}
+:root{
+  --primary-color: 0,0,0,1.00 ;
+}
+
+body {
+  background-color:#333333;
+	background-image: linear-gradient(black, black, black, gray, white, gray, black);
+}
+
+h1, p, h5 {color: #ffffff}
+
+h5 {
+	margin: 0px 80px 20px;
+}
+
+h1 {text-shadow: -3px 0 0 rgb(var(--primary-color)), 0 -2px 0 rgb(var(--primary-color)), 0 2px 0 rgb(var(--primary-color)), 2px 0 0 rgb(var(--primary-color)), -3px 0 0 rgb(var(--primary-color));}
+
+p, a, h5 {text-shadow: -2px 0 rgb(var(--primary-color)), 0 2px rgb(var(--primary-color)), 2px 0 rgb(var(--primary-color)), -2px 0 rgb(var(--primary-color));}
+
+.item1 {grid-area: header;}
+.item2 {grid-area: menu;}
+.item3 {grid-area: right;}
+.item4 {grid-area: main;}
+.item5 {grid-area: footer;}
+.item6 {grid-area: main;}
+
+a {
+    text-decoration:none;
+    color: white;
+}
+
+a: hover {
+    text-decoration:underline;
+    color: white;
+}
+
+.grid-container {
+   
+    display: grid; 
+    grid-template-rows: auto auto auto auto;
+	grid-row-gap: auto;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+     'header header header header header header'
+	 'header header header header header header'
+     'right right right right right right'
+     'main main main main main main'
+     'footer footer footer footer footer footer';
+    gap: 10px;
+    
+padding: 0px;
+}
+
+.item4 {
+    grid-area: main;
+}
+
+.item4 > div {
+	float: left; 
+	margin: 0px 60px 200px;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+.grid-container > div 
+{
+    text-align: center;
+    background-color: rgba(97,91,111,0.54);
+    
+    padding: 0px 0;
+    font-size: 30px;
+}
+div > .item3 {
+    text-align: left;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 20px 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	
+	
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #594C77;
+  }
+  
+  .button1:hover {
+    background-color: #594C77;
+    color: white;
+  }
+  
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #6A00BA;
+  }
+  
+  .button2:hover {
+    background-color: #6A00BA;
+    color: white;
+  }
+  form {
+    float:left
+}
+

@@ -1,0 +1,95 @@
+
+body {
+  background-color:#4caf4f94;
+}
+
+h1 {color: #ffffff}
+
+h1 {text-shadow: -3px 0 #008CBA, 0 -2px #008CBA, 0 2px #008CBA, 2px 0 #008CBA, -3px 0 #008CBA;}
+
+p, a {text-shadow: -2px 0 #00ff88, 0 2px #00ff88, 2px 0 #00ff88, -2px 0 #00ff88 ;}
+
+.item1 {grid-area: header;}
+.item2 {grid-area: menu;}
+.item3 {grid-area: right;}
+.item4 {grid-area: main;}
+.item5 {grid-area: footer;}
+
+a {
+    text-decoration:none;
+    color: black;
+}
+
+.grid-container {
+   
+    display: grid; 
+    grid-template-rows: 10em auto auto auto;
+    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-areas:
+     'header header header header header header'
+     'right right right right right right'
+     'main main main main main main'
+     'footer footer footer footer footer footer';
+    gap: 10px;
+    background-color: #b1b1b100;
+padding: 10px;
+}
+
+.item4 {
+    grid-area: main;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+.grid-container > div 
+{
+    text-align: center;
+    background-color: rgb(205, 255, 194);
+    
+    padding: 20px 0;
+    font-size: 30px;
+}
+div > .item3 {
+    text-align: left;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  form {
+    float:left
+}
+
