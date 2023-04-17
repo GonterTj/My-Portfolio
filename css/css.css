@@ -48,7 +48,9 @@ p {
     text-align: left;
 }
 
-
+span {
+    margin: 0 10px
+}
 
 .flex-box{
     width: 80%;
