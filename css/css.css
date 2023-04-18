@@ -92,20 +92,24 @@ span {
 .item3 {grid-area: right;}
 .item4 {grid-area: main;}
 .item5 {grid-area: footer;}
-.item6 {grid-area: write;}
+.item6 {grid-area: prod;}
+.item7 {grid-area: conc;}
+.item8 {grid-area: tech;}
+.item9 {grid-area: voca;}
 
 
 .grid-container {
    
     display: grid; 
     grid-template-rows: 5em auto auto auto;
-    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
     grid-template-areas:
-     'header write write write write header'
-     'main write write write write main'
-     'footer write write write write footer';
+     'header header header header'
+     'prod conc tech voca'
+     'main main main main'
+     'footer footer footer footer';
     gap: 10px;
-padding: 10px;
+padding: 2.5vw;
 }
 
 .item4 {
@@ -119,3 +123,40 @@ padding: 10px;
 form {
     float:left
 }
+
+.button {
+    width: 18vw;
+    height: 20vh;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vmax;
+    margin: 100px 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
